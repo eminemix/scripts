@@ -1,4 +1,4 @@
 scripts
 =======
 
-Useful linux ramdom stuff
+Useful random stuff

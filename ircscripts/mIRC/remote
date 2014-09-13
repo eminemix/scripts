@@ -1,0 +1,22 @@
+on 1:START: {
+  .nick temp231qwe
+  .server eu.freenode.net
+  .server -me otcirc.jf.intel.com 6697
+}
+
+on 1:CONNECT: {
+  if ($network == freenode) {
+    .nick ivali
+    .msg NickServ identify fakepasswd
+    .join #rosedu
+    .join #android
+    .join #linux
+    .join #android-dev
+    .join #android-root
+    .join #haskell-ro
+    .join #mptcp
+  }
+  if ($network == OTCIRC) {
+    .join #otcromania
+  }
+}

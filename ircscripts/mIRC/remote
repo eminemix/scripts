@@ -1,6 +1,6 @@
 on 1:START: {
   .nick temp231qwe
-  .server eu.freenode.net
+  .server eu.freenode.net 8000
   .server -me otcirc.jf.intel.com 6697
 }
 

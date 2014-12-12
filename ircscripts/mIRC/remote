@@ -7,7 +7,7 @@ on 1:START: {
 on 1:CONNECT: {
   if ($network == freenode) {
     .nick ivali
-    .msg NickServ identify fakepasswd
+    .msg NickServ identify ivali fakepasswd
     .join #rosedu
     .join #android
     .join #linux

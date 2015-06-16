@@ -17,6 +17,7 @@ on 1:CONNECT: {
     .join #mptcp
   }
   if ($network == OTCIRC) {
+    .nick ivali
     .join #otcromania
   }
 }

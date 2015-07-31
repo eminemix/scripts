@@ -1,5 +1,5 @@
 on 1:START: {
-  .nick temp231qwe
+  .nick ivali $+ $rand(0,999)
   .server eu.freenode.net 8000
   .server -me otcirc.jf.intel.com 6697
 }
@@ -15,6 +15,8 @@ on 1:CONNECT: {
     .join #android-root
     .join #haskell-ro
     .join #mptcp
+    .join #chromium-os
+    .join #chromium
   }
   if ($network == OTCIRC) {
     .nick ivali

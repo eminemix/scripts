@@ -2,7 +2,7 @@ on 1:START: {
   .nick ivali $+ $rand(0,999)
   .server eu.freenode.net 8000
   .server -me otcirc.jf.intel.com 6697
-  .server -me public-irc.w3.org 6667
+  .server -m public-irc.w3.org 6665
 }
 
 on 1:CONNECT: {

@@ -19,8 +19,12 @@ on 1:CONNECT: {
     .join #chromium-os
     .join #chromium
   }
-  if ($network == OTCIRC) {
+  elseif ($network == OTCIRC) {
     .nick ivali
     .join #otcromania
+  }
+  else {
+    .nick ivali
+    .join #webassembly
   }
 }

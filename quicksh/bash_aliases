@@ -175,3 +175,9 @@ function clean_kern() {
 	sudo apt-get remove --purge $(dpkg -l 'linux-*' | sed '/^ii/!d;/'"$(uname -r | sed "s/\(.*\)-\([^0-9]\+\)/\1/")"'/d;s/^[^ ]* [^ ]* \([^ ]*\).*/\1/;/[0-9]/!d')
 /
 }
+
+# Send to board
+
+function send_to_board {
+	stty -f /dev/cu.usbserial-A50520DF 115200 & lsz -v $1 </dev/cu.usbserial-A50520DF >/dev/cu.usbserial-A50520DF
+}

@@ -181,3 +181,8 @@ function clean_kern() {
 function send_to_board {
 	stty -f /dev/cu.usbserial-A50520DF 115200 & lsz -v $1 </dev/cu.usbserial-A50520DF >/dev/cu.usbserial-A50520DF
 }
+
+# FT
+
+alias m4='minicom -D /dev/ttyUSB3'
+alias a7='minicom -D /dev/ttyUSB2'

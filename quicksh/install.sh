@@ -14,6 +14,7 @@ function install_root() {
     do
         cp -v bash_aliases $path/.bash_aliases
         chmod o+x $path/.bash_aliases
+	cp -v minirc.dfl ~/.minirc.dfl
     done
 }
 

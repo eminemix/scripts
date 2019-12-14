@@ -1,0 +1,13 @@
+--- /home/vilie/.bashrc	2019-12-14 02:42:18.499566193 -0800
++++ /home/vilie/.bashrc	2019-12-14 02:45:15.775820970 -0800
+@@ -16,8 +16,8 @@
+ shopt -s histappend
+ 
+ # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+-HISTSIZE=1000
+-HISTFILESIZE=2000
++HISTSIZE=100000
++HISTFILESIZE=200000
+ 
+ # check the window size after each command and, if necessary,
+ # update the values of LINES and COLUMNS.
